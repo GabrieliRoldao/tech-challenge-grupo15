@@ -57,3 +57,4 @@ kubectl apply -f k8s/clusterRoles
 kubectl apply -f k8s/volumes
 kubectl apply -f k8s/components.yaml
 ```
+
