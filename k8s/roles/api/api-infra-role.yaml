@@ -1,9 +1,0 @@
-apiVersion: rbac.authorization.k8s.io/v1
-kind: Role
-metadata:
-  namespace: api-tech-challenge
-  name: api-infra-role
-rules:
-  - apiGroups: ["*"]
-    resources: ["horizontalpodautoscalers"]
-    verbs: ["list", "create", "watch", "patch", "delete", "exec", "get"]
