@@ -7,8 +7,8 @@ jobs:
       matrix:
         node-version: [16.x]
     steps:
-      - uses: actions/checkout@v2
-      
+      - uses: actions/checkout@v4
+    
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
         with:
@@ -23,7 +23,7 @@ jobs:
         node-version: [16.x]
     needs: [install-deps]
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
@@ -42,7 +42,7 @@ jobs:
         node-version: [16.x]
     needs: [install-deps]
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
         with:
@@ -59,7 +59,7 @@ jobs:
         node-version: [16.x]
     needs: [install-deps, tests, lint]
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
         with:
